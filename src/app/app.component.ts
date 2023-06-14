@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,9 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title: string = "basket of baby beavers";
-  imgSrc: string = "https://i.imgur.com/uWtpmEQ.jpg";
-  hiText: string = "hi cadee"
+  favoriteAnimal: string = "Liger";
 
   constructor() {
     
