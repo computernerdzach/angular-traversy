@@ -1,5 +1,12 @@
 import { Component } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { type } from 'os';
+
+interface Pokemon {
+  id: number,
+  name: string,
+  type: string
+  isCool: boolean
+}
 
 @Component({
   selector: 'app-root',
@@ -7,7 +14,22 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  pokemonName: string = "";
+  pokemons: Pokemon[] = [{
+    id: 1,
+    name: 'pikachu',
+    type: 'electric',
+    isCool: false
+  }, {
+    id: 2,
+    name: 'squirtle',
+    type: 'water',
+    isCool: true
+  }, {
+    id: 3,
+    name: 'charmander',
+    type: 'fire',
+    isCool: true
+  }];
 
   constructor() {
     
