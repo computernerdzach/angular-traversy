@@ -24,14 +24,14 @@
 
     <tr *ngFor="let pokemon of pokemons; let i = index">
       <td class="pokemon-td" 
-        [style.backgroundColor]="(pokemon.isStylish ? 'purple': '')">
+        [style.backgroundColor]="(pokemon.isStylish ? '#800080': '')">
         {{i}}:{{pokemon.name}}
       </td>
     </tr>
 
     <tr *ngFor="let pokemon of pokemons; let i = index">
       <td class="pokemon-td" 
-        [ngStyle]="{'backgroundColor': (pokemon.isStylish ? 'purple' : '')}">
+        [ngStyle]="{'backgroundColor': (pokemon.isStylish ? '#800080' : '')}">
         {{i}}:{{pokemon.name}}
       </td>
       
